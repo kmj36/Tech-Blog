@@ -6,9 +6,12 @@ sources/frontfiles/.pnp
 .pnp.js
 buildedfiles/
 *.sql
+sources/idfiles.cfg
+sources/rule.txt
 
 # testing
 sources/frontfiles/coverage
+sources/Logs
 
 # production
 sources/frontfiles/build
