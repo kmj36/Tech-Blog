@@ -596,14 +596,13 @@ func staticfiles(sf *gin.Engine) {
 
 func Middleware(idinfo requriedinfo) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		c.Header("Access-Control-Allow-Headers", "*")
+		c.Header("Access-Control-Allow-Headers", "Content-Type, Origin")
 		c.Header("Access-Control-Allow-Origin", idinfo.Serverptc+"://"+idinfo.Serverip /*+":"+Clientport 개발용*/)
 		c.Header("Access-Control-Allow-Credentials", "true")
 		c.Header("Access-Control-Allow-Methods", "GET, POST, HEAD, OPTIONS")
 		c.Header("Access-Control-Max-Age", "86400")
 		c.Header("Cache-Control", "public, max-age=31536000")
-		c.Header("Content-Encoding", "gzip")
-		c.Header("Expires", time.Now().Local().Add(time.Second*86400).Format(time.RFC1123))
+		c.Header("Expires", time.Now().Add(time.Second*86400).Format(time.RFC1123))
 
 		if c.Request.Method == "OPTIONS" {
 			c.AbortWithStatus(http.StatusNoContent)
