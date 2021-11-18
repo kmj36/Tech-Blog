@@ -1,0 +1,28 @@
+.Aboutcontainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snsicon {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.Aboutcolume {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutlogo {
+    width: 150px;
+    margin: 30px;
+}
+
+.contact {
+    font-size: x-large;
+}
