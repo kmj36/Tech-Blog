@@ -768,7 +768,7 @@ func main() { // 에러 시 페이탈 사용
 	log.Println("Logging start.")
 
 	/* 서버 시작 */
-	gin.SetMode(gin.DebugMode) // 모드 설정 (gin.ReleaseMode 배포모드, gin.DebugMode 디버그모드)
+	gin.SetMode(gin.ReleaseMode) // 모드 설정 (gin.ReleaseMode 배포모드, gin.DebugMode 디버그모드)
 	mainengine := initengine(idinfo)
 
 	if idinfo.Runport == "36530" { //개발용
