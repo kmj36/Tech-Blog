@@ -23,8 +23,7 @@
 기술 블로그를 직접 개발하는 프로젝트입니다.
 이 프로그램은 개인적인 블로그 프로그램으로 서버 실행 시에 idfiles.cfg 파일이 없으면 실행할 수 없습니다.
 
-블로그:https://anend.site/
-(도메인이 DNS 서버별로 불안정하거나 연결이 되지 않는 경우도 있습니다.)
+블로그:https://anend.site/ (운영 중단)
 
 # 이미지
 ![image](https://user-images.githubusercontent.com/66502982/145320170-f7ebe562-afb1-4845-871c-233518e3eb95.png)
